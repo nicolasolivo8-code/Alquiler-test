@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Alquileres Nico</title>
+    <style>
+        .header {
+            font-family: system-ui, sans-serif;
+            background-color: #1b1b1b;
+            padding: 20px 40px;
+            display:flex; 
+            justify-content: space-between;
+            align-items: center;
+    }
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .menu    {
+            display: flex;
+        
+        }
+        .menu a {
+            color: white;
+            transition: color 0.2s ease;   
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        .menu a:hover{
+            color: #00cc66;
+        }
+    .quienes-somos  {
+        font-family:Arial, Helvetica, sans-serif;
+        padding: 15px 25px;
+        font-size : 20px;
+        text-align: center;
+     }
+        .quienes-somos p {
+        font-size: 26px;
+        font-family: Oswald, sans-serif;
+        font-weight: 500;
+        padding: 5px 25px;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    
+    }
+    .quienes-somos h2 {
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        text-align: center;
+        color: #1b1b1b;
+        display: inline-block;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 10px rgba(0, 204, 102, 0.4);
+    }
+    
+    .texto-relleno {
+        display: block;
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+        margin-top: 30px;
+}
+   
+        
+    
+    
+    </style>
+</head>
+ 
+   <body> 
+        <div class="header">
+          
+        <div class="logo">AlquileresNico</div> 
+        <div class="menu"> <a href="#">Inicio</a>
+                <a href="#">Propiedades</a>
+                <a href="#">Contacto</a>
+                <button id="boton-swag">SWAG 🔊</button>
+
+    <audio id="musica-keef" src="swag.mp3" loop></audio>
+</div>
+  
+<script>
+    // 1. Guardamos el botón en una variable
+    let boton = document.getElementById("boton-swag");
+    
+    // 2. Guardamos el reproductor en otra variable
+    let audio = document.getElementById("musica-keef");
+
+    // 3. Le decimos que al hacer click, ejecute el .play()
+    boton.addEventListener("click", function() {
+        audio.play();
+    });
+</script>
+
+</body>
+</html>
+           
+            </div>
+
+        </div> 
+        <div class="quienes-somos"><h2>¿QUIENES SOMOS?</h2>
+        <p> somos una empresa dedicada al alquiler de propiedades en la región.</p>
+        <p>Contamos con más de 10 años de experiencia ayudando a familias a encontrar su hogar ideal, brindando confianza y seguridad en cada contrato.</p>    
+        
+        <img src="https://images.genius.com/790451e38d88ae1550aea32da53f9791.612x612x1.jpg" alt="chief keff">
+        <small class="texto-relleno">* Las imágenes expuestas en este sitio web son meramente ilustrativas y pueden variar respecto a la realidad. Todos los contratos de locación y alquiler están sujetos a la aprobación crediticia del sector comercial, así como también a la presentación y revisión de las garantías propietarias correspondientes. Los valores expresados en la plataforma no incluyen gastos administrativos ni tasas municipales adicionales. Términos, condiciones y contratos vigentes para el período 2026. AlquileresNico — Todos los derechos reservados.</small>
+        
+        
+    
+    
+    
+    </div>
+        
+    </body>
